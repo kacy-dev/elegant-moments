@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elegant Moments Events | Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <div id="toast" class="toast">Action completed successfully!</div>
+
+  <!-- Shared Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Elegant<span>Moments</span></a>
+      <div class="hamburger" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="login.html" class="nav-link active-link">Login</a></li>
+        <li><a href="register.html" class="nav-link">Register</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Book an Event</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Login Authorization Card -->
+  <div class="container">
+    <div class="auth-container">
+      <div class="auth-header">
+        <h2>Welcome Back</h2>
+        <p style="color: var(--text-gray); font-size: 0.9rem;">Login to manage your event bookings</p>
+      </div>
+      <form id="loginForm" onsubmit="handleLoginSubmit(event)">
+        <div class="form-group">
+          <label for="l-email">Email Address</label>
+          <input type="email" id="l-email" class="form-control" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="l-pass">Password</label>
+          <input type="password" id="l-pass" class="form-control" placeholder="••••••••" required>
+        </div>
+        <div class="auth-options">
+          <label><input type="checkbox"> Remember Me</label>
+          <a href="#" style="color: var(--primary-gold);" onclick="showToast('Password reset link sent to your email!')">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+      </form>
+      <div class="auth-footer-text">
+        Don't have an account? <a href="register.html">Create one</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared Footer -->
+  <footer>
+    <div class="container">
+      <div class="grid-4-col" style="margin-bottom: 50px;">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="color: #fff;">Elegant<span style="color:var(--primary-gold);">Moments</span></a>
+          <p style="margin-top: 15px; font-size: 0.9rem;">Creating unforgettable experiences, one event at a time.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Wedding Planning</a></li>
+            <li><a href="services.html">Corporate Events</a></li>
+            <li><a href="services.html">Birthday Celebrations</a></li>
+            <li><a href="services.html">Decoration</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 8px;"><i class="fas fa-map-marker-alt" style="color: var(--primary-gold);"></i> Lagos, Nigeria</p>
+          <p style="font-size: 0.9rem; margin-bottom: 8px;"><i class="fas fa-phone" style="color: var(--primary-gold);"></i> +234 800 123 4567</p>
+          <p style="font-size: 0.9rem;"><i class="fas fa-envelope" style="color: var(--primary-gold);"></i> hello@elegantmoments.com</p>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2026 Elegant Moments Events. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

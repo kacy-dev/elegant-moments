@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elegant Moments Events | Register</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <div id="toast" class="toast">Action completed successfully!</div>
+
+  <!-- Shared Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Elegant<span>Moments</span></a>
+      <div class="hamburger" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="login.html" class="nav-link">Login</a></li>
+        <li><a href="register.html" class="nav-link active-link">Register</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Book an Event</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- User Registration Card -->
+  <div class="container">
+    <div class="auth-container">
+      <div class="auth-header">
+        <h2>Create Account</h2>
+        <p style="color: var(--text-gray); font-size: 0.9rem;">Join us to start planning your dream event</p>
+      </div>
+      <form id="registerForm" onsubmit="handleRegisterSubmit(event)">
+        <div class="form-group">
+          <label for="r-name">Full Name</label>
+          <input type="text" id="r-name" class="form-control" placeholder="John Doe" required>
+        </div>
+        <div class="form-group">
+          <label for="r-email">Email Address</label>
+          <input type="email" id="r-email" class="form-control" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="r-phone">Phone Number</label>
+          <input type="tel" id="r-phone" class="form-control" placeholder="+234..." required>
+        </div>
+        <div class="form-group">
+          <label for="r-pass">Password</label>
+          <input type="password" id="r-pass" class="form-control" placeholder="••••••••" minlength="6" required>
+        </div>
+        <div class="form-group">
+          <label for="r-cpass">Confirm Password</label>
+          <input type="password" id="r-cpass" class="form-control" placeholder="••••••••" required>
+        </div>
+        <div class="form-group">
+          <label><input type="checkbox" id="r-terms" required> I accept the Terms & Conditions</label>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Register</button>
+      </form>
+      <div class="auth-footer-text">
+        Already have an account? <a href="login.html">Login</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared Footer -->
+  <footer>
+    <div class="container">
+      <div class="grid-4-col" style="margin-bottom: 50px;">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="color: #fff;">Elegant<span style="color:var(--primary-gold);">Moments</span></a>
+          <p style="margin-top: 15px; font-size: 0.9rem;">Creating unforgettable experiences, one event at a time.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Wedding Planning</a></li>
+            <li><a href="services.html">Corporate Events</a></li>
+            <li><a href="services.html">Birthday Celebrations</a></li>
+            <li><a href="services.html">Decoration</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 8px;"><i class="fas fa-map-marker-alt" style="color: var(--primary-gold);"></i> Lagos, Nigeria</p>
+          <p style="font-size: 0.9rem; margin-bottom: 8px;"><i class="fas fa-phone" style="color: var(--primary-gold);"></i> +234 800 123 4567</p>
+          <p style="font-size: 0.9rem;"><i class="fas fa-envelope" style="color: var(--primary-gold);"></i> hello@elegantmoments.com</p>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2026 Elegant Moments Events. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/register.js"></script>
+</body>
+</html>

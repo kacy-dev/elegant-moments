@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elegant Moments Events | Client Reviews</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast">Action completed successfully!</div>
+
+  <!-- Shared Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Elegant<span>Moments</span></a>
+      <div class="hamburger" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="reviews.html" class="nav-link active-link">Reviews</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="login.html" class="nav-link">Login</a></li>
+        <li><a href="register.html" class="nav-link">Register</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Book an Event</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Section Header -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2>Client Reviews & Experiences</h2>
+        <p>Read real stories and experiences shared by clients who trusted us with their special moments.</p>
+      </div>
+
+      <!-- Rating Overview Card -->
+      <div class="rating-summary-card reveal">
+        <div class="big-rating-number">4.9 / 5.0</div>
+        <div class="star-rating-icons">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p style="color: var(--text-gray); font-size: 0.95rem;">Based on 120+ Verified Client Reviews</p>
+      </div>
+
+      <!-- Reviews Wall Grid -->
+      <div class="reviews-grid" id="reviewsContainer">
+        
+        <!-- Review 1 -->
+        <div class="review-card-full reveal">
+          <div>
+            <span class="review-badge">Wedding Planning</span>
+            <div class="star-rating-icons">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p style="color: var(--text-gray); font-style: italic; margin-bottom: 20px;">
+              "Elegant Moments transformed our wedding day into a dream. From vendor coordination in Lagos to the late-night timing, everything was executed flawlessly!"
+            </p>
+          </div>
+          <div class="client-info">
+            <div class="client-avatar">SD</div>
+            <div class="client-details">
+              <h4>Sarah & Daniel</h4>
+              <span>Wedding in Victoria Island</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card-full reveal">
+          <div>
+            <span class="review-badge">Corporate Event</span>
+            <div class="star-rating-icons">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p style="color: var(--text-gray); font-style: italic; margin-bottom: 20px;">
+              "Extremely professional execution for our annual executive summit. Stage setups, audio, and logistics were handled without a single hitch."
+            </p>
+          </div>
+          <div class="client-info">
+            <div class="client-avatar">MA</div>
+            <div class="client-details">
+              <h4>Michael Adebayo</h4>
+              <span>Corporate Director</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card-full reveal">
+          <div>
+            <span class="review-badge">Birthday Party</span>
+            <div class="star-rating-icons">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p style="color: var(--text-gray); font-style: italic; margin-bottom: 20px;">
+              "The decoration and styling for my 40th birthday celebration blew everyone away. The gold-and-white theme was stunning!"
+            </p>
+          </div>
+          <div class="client-info">
+            <div class="client-avatar">CO</div>
+            <div class="client-details">
+              <h4>Clara Okafor</h4>
+              <span>Milestone Celebration</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="review-card-full reveal">
+          <div>
+            <span class="review-badge">Conference Planning</span>
+            <div class="star-rating-icons">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            </div>
+            <p style="color: var(--text-gray); font-style: italic; margin-bottom: 20px;">
+              "Great team to work with. They kept all guest registrations organized and managed speaker schedules seamlessly."
+            </p>
+          </div>
+          <div class="client-info">
+            <div class="client-avatar">EO</div>
+            <div class="client-details">
+              <h4>Emmanuel Oladipo</h4>
+              <span>Tech Conference Organizer</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 5 -->
+        <div class="review-card-full reveal">
+          <div>
+            <span class="review-badge">Decoration & Styling</span>
+            <div class="star-rating-icons">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p style="color: var(--text-gray); font-style: italic; margin-bottom: 20px;">
+              "Sophia and her floral design team were outstanding! The hall looked like a royal garden. We could not have asked for better."
+            </p>
+          </div>
+          <div class="client-info">
+            <div class="client-avatar">BN</div>
+            <div class="client-details">
+              <h4>Blessing & Nnamdi</h4>
+              <span>Anniversary Celebration</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 6 -->
+        <div class="review-card-full reveal">
+          <div>
+            <span class="review-badge">Event Coordination</span>
+            <div class="star-rating-icons">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p style="color: var(--text-gray); font-style: italic; margin-bottom: 20px;">
+              "Having their event coordinator on site on the day of our launch allowed us to focus completely on our business partners."
+            </p>
+          </div>
+          <div class="client-info">
+            <div class="client-avatar">FT</div>
+            <div class="client-details">
+              <h4>Fatima Tarfa</h4>
+              <span>Product Launch Manager</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Review Submission Section -->
+  <section class="section-padding bg-beige reveal">
+    <div class="container">
+      <div class="section-header">
+        <h2>Leave Us a Review</h2>
+        <p>Worked with us recently? Share your experience with future clients!</p>
+      </div>
+
+      <div class="form-container" style="max-width: 650px; margin: 0 auto;">
+        <form id="reviewForm" onsubmit="handleReviewSubmit(event)">
+          <div class="form-group">
+            <label for="rev-name">Your Name</label>
+            <input type="text" id="rev-name" class="form-control" placeholder="e.g. Jane Doe" required>
+          </div>
+
+          <div class="form-group">
+            <label for="rev-type">Event Type</label>
+            <select id="rev-type" class="form-control" required>
+              <option value="">Select Event Type</option>
+              <option value="Wedding Planning">Wedding Planning</option>
+              <option value="Birthday Party">Birthday Party</option>
+              <option value="Corporate Event">Corporate Event</option>
+              <option value="Conference Planning">Conference Planning</option>
+              <option value="Decoration & Styling">Decoration & Styling</option>
+              <option value="Event Coordination">Event Coordination</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Rating</label>
+            <div class="interactive-stars" style="margin-top: 5px;">
+              <i class="fas fa-star" onclick="setRating(1)"></i>
+              <i class="fas fa-star" onclick="setRating(2)"></i>
+              <i class="fas fa-star" onclick="setRating(3)"></i>
+              <i class="fas fa-star" onclick="setRating(4)"></i>
+              <i class="fas fa-star" onclick="setRating(5)"></i>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="rev-comment">Your Review</label>
+            <textarea id="rev-comment" class="form-control" rows="4" placeholder="Tell us about your experience working with Elegant Moments..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Review</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shared Footer -->
+  <footer>
+    <div class="container">
+      <div class="grid-4-col" style="margin-bottom: 50px;">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="color: #fff;">Elegant<span style="color:var(--primary-gold);">Moments</span></a>
+          <p style="margin-top: 15px; font-size: 0.9rem;">Creating unforgettable experiences, one event at a time.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Wedding Planning</a></li>
+            <li><a href="services.html">Corporate Events</a></li>
+            <li><a href="services.html">Birthday Celebrations</a></li>
+            <li><a href="services.html">Decoration</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 8px;"><i class="fas fa-map-marker-alt" style="color: var(--primary-gold);"></i> Lagos, Nigeria</p>
+          <p style="font-size: 0.9rem; margin-bottom: 8px;"><i class="fas fa-phone" style="color: var(--primary-gold);"></i> +234 800 123 4567</p>
+          <p style="font-size: 0.9rem;"><i class="fas fa-envelope" style="color: var(--primary-gold);"></i> hello@elegantmoments.com</p>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2026 Elegant Moments Events. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/reviews.js"></script>
+</body>
+</html>
