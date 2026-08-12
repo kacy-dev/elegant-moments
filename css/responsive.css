@@ -70,4 +70,14 @@
   .hero-buttons {
     flex-direction: column;
   }
+
+
+}
+
+@media (max-width: 500px) {
+  .planners-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
+}
 }
