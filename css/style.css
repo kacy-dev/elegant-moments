@@ -810,3 +810,141 @@ footer {
 .interactive-stars i:hover {
   color: var(--primary-gold);
 }
+
+
+
+
+/* ==========================================
+   EVENT PLANNERS DIRECTORY & ONBOARDING STYLES
+   ========================================== */
+
+/* Filter Buttons Bar */
+.filter-bar {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.filter-btn {
+  background: var(--pure-white);
+  border: 1px solid var(--light-gray);
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background-color: var(--primary-gold);
+  color: var(--pure-white);
+  border-color: var(--primary-gold);
+}
+
+/* Planners Grid Layout */
+.planners-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.planner-card {
+  background: var(--pure-white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--light-gray);
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+}
+
+.planner-card:hover {
+  transform: translateY(-8px);
+}
+
+.planner-header {
+  position: relative;
+  background-color: var(--soft-beige);
+  padding: 30px 20px 20px;
+  text-align: center;
+}
+
+.planner-avatar-wrap {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  border: 3px solid var(--primary-gold);
+  overflow: hidden;
+  background-color: #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark-charcoal);
+  font-family: var(--font-heading);
+}
+
+.planner-avatar-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.planner-specialty-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--primary-gold);
+  color: var(--pure-white);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+
+.planner-body {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.planner-name {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  color: var(--dark-charcoal);
+}
+
+.planner-title {
+  color: var(--primary-gold);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.planner-bio {
+  color: var(--text-gray);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.planner-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  border-top: 1px solid var(--light-gray);
+  font-size: 0.85rem;
+  color: var(--text-gray);
+}
